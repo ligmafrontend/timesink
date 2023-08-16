@@ -80,6 +80,14 @@ local default_plugins = {
   },
 
   {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    opts = require("plugins.configs.surround").opts,
+    config = require("plugins.configs.surround").config,
+  },
+
+  {
     "NvChad/nvim-colorizer.lua",
     opts = require("plugins.configs.colorizer").opts,
     config = require("plugins.configs.colorizer").config,

@@ -14,7 +14,7 @@
 - [ ] [LuaLine](https://github.com/nvim-lualine/lualine.nvim)
 - [ ] Copilot
 - [x] nvim-autopairs
-- [ ] nvim-surround
+- [x] nvim-surround
 - [x] alpha (dashboard)
 - [x] mason
 - [x] mini-move
