@@ -4,6 +4,7 @@
   "lazy.nvim": { "branch": "main", "commit": "3ad55ae678876516156cca2f361c51f7952a924b" },
   "mason.nvim": { "branch": "main", "commit": "74eac861b013786bf231b204b4ba9a7d380f4bd9" },
   "mini.move": { "branch": "main", "commit": "3afd39873eb9171684e554a214c055482444a47d" },
+  "nvim-colorizer.lua": { "branch": "master", "commit": "dde3084106a70b9a79d48f426f6d6fec6fd203f7" },
   "nvim-lspconfig": { "branch": "master", "commit": "0d29cad8de3b2c654315203fc1fe12fde722a18a" },
   "nvim-tree.lua": { "branch": "master", "commit": "18c7a3119839adc4599d838726deae662859c8b2" },
   "nvim-treesitter": { "branch": "master", "commit": "7c27beddda182a178eafd978a96cc35738d6be98" },

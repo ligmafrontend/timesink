@@ -1,8 +1,9 @@
 local default_plugins = {
   {
-    'nvim-telescope/telescope.nvim', tag = '0.1.2',
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.2',
     cmd = "Telescope",
-    dependencies = { 
+    dependencies = {
       'nvim-lua/plenary.nvim',
       { "nvim-telescope/telescope-fzf-native.nvim", enabled = vim.fn.executable "make" == 1, build = "make" },
     },
@@ -36,11 +37,13 @@ local default_plugins = {
     end,
     config = require "plugins.configs.telescope",
   },
+
   {
     "echasnovski/mini.move",
     keys = require("plugins.configs.mini_move").keys,
     opts = require("plugins.configs.mini_move").opts,
   },
+
   {
     "williamboman/mason.nvim",
     cmd = { "Mason", "MasonInstall", "MasonInstallAll", "MasonUninstall", "MasonUninstallAll", "MasonLog" },
@@ -52,23 +55,27 @@ local default_plugins = {
       vim.g.mason_binaries_list = opts.ensure_installed
     end
   },
+
   {
     "nvim-tree/nvim-web-devicons",
   },
+
   {
     "nvim-treesitter/nvim-treesitter",
     cmd = { "TSInstall" },
     build = ":TSUpdate",
   },
+
   {
     "neovim/nvim-lspconfig",
     init = function()
-  --    require("core.utils").lazy_load "nvim-lspconfig"
+      --    require("core.utils").lazy_load "nvim-lspconfig"
     end,
     config = function()
       --- require "plugins.configs.lspconfig"
     end,
   },
+
   {
     "nvim-tree/nvim-tree.lua",
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
@@ -82,22 +89,16 @@ local default_plugins = {
       require("nvim-tree").setup(opts)
     end,
   },
+
   {
     "goolord/alpha-nvim",
     lazy = false,
     opts = require "plugins.configs.alpha".opts,
     config = require "plugins.configs.alpha".config,
   },
+
   {
     "numToStr/Comment.nvim",
-    keys = {
-      { "gcc", mode = "n", desc = "Comment toggle current line" },
-      { "gc", mode = { "n", "o" }, desc = "Comment toggle linewise" },
-      { "gc", mode = "x", desc = "Comment toggle linewise (visual)" },
-      { "gbc", mode = "n", desc = "Comment toggle current block" },
-      { "gb", mode = { "n", "o" }, desc = "Comment toggle blockwise" },
-      { "gb", mode = "x", desc = "Comment toggle blockwise (visual)" },
-    },
     init = function()
       require("core.utils").load_mappings "comment"
     end,
@@ -110,19 +111,25 @@ local default_plugins = {
     "folke/which-key.nvim",
   },
 
+  {
+    "NvChad/nvim-colorizer.lua",
+    opts = require("plugins.configs.colorizer").opts,
+    config = require "plugins.configs.colorizer".config,
+  },
+
   -- theme
   {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
     opts = {
-      -- transparent = true,
-      -- styles = {
-      --    sidebars = "transparent",
-      --    floats = "transparent",
-      -- }
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      }
     },
-    -- config = require("plugins.configs.theme"),
+    config = require("plugins.configs.theme"),
   }
 }
 
