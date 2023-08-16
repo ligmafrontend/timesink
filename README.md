@@ -1,0 +1,57 @@
+# timesink.
+
+## What we want
+
+- [ ] Line numbers (relative)
+- [ ] Line length 120 (wenn moeglich nur wenn ueberschritten anzeigen?)
+- [ ] lazy git (astronvim)
+- [ ] lsp (move mit ctrl + j k)
+- [ ] move between splits 
+- [ ] whichkey config
+- [ ] todo-comments
+- [ ] [NvimColorizer](https://github.com/NvChad/nvim-colorizer.lua)
+- [ ] [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [ ] [LuaLine](https://github.com/nvim-lualine/lualine.nvim)
+- [ ] Copilot
+- [ ] nvim-autopares
+- [ ] nvim-surround
+- [x] alpha (dashboard)
+- [x] mason
+- [x] mini-move
+- [x] nvimtree
+- [x] telescope
+- [x] comment
+- [x] which-key (plugin)
+- [x] theme:
+    - [x] tokyonight
+- [x] treesitter
+- [x] webdev-icons
+- [x] lazyvim
+- [ ] buffers as tabs (heirline)
+- [ ] custom status line ^^^
+- [ ] keybinds 
+	-  <leader>-c close actual buffer
+	-  <leader>-C close all except current buffer
+	-  <leader>-fF find all files hiffen + gitignored
+    -  LSP mappings (see astronvim)
+- [ ] default lsp and TS config
+    - LSP
+        - rust
+        - go
+        - python
+        - javascript
+        - typescript
+        - tailwindcss
+        - html
+        - css
+    - TS
+        - jsx
+        - javascript
+        - tsx
+        - typescript
+        - go
+        - rust
+        - python 
+
+- [ ] Terminal
+- [ ] Debugger

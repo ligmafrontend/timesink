@@ -1,8 +1,5 @@
 local default_plugins = {
   {
-    "nvim-lua/plenary.nvim"
-  },
-  {
     'nvim-telescope/telescope.nvim', tag = '0.1.2',
     cmd = "Telescope",
     dependencies = { 
@@ -74,7 +71,7 @@ local default_plugins = {
   },
   {
     "nvim-tree/nvim-tree.lua",
-    cmd = { "NvimTreeToggle" },
+    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
     init = function()
       require("core.utils").load_mappings "nvimtree"
     end,
