@@ -61,9 +61,10 @@ local default_plugins = {
     config = require("plugins.configs.comment").config,
   },
 
-  -- load whichkey after gui
   {
-    "folke/which-key.nvim",
+    "lukas-reineke/indent-blankline.nvim",
+    opts = require("plugins.configs.indent_blankline").opts,
+    config = require("plugins.configs.indent_blankline").config,
   },
 
   {
@@ -79,7 +80,11 @@ local default_plugins = {
     priority = 1000,
     opts = require("plugins.configs.theme").opts,
     config = require("plugins.configs.theme").config,
-  }
+  },
+
+  {
+    "folke/which-key.nvim",
+  },
 }
 
 local config = require("core.utils").get_config()

@@ -9,8 +9,8 @@
 - [ ] move between splits 
 - [ ] whichkey config
 - [ ] todo-comments
-- [ ] [NvimColorizer](https://github.com/NvChad/nvim-colorizer.lua)
-- [ ] [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [x] [NvimColorizer](https://github.com/NvChad/nvim-colorizer.lua)
+- [x] [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [ ] [LuaLine](https://github.com/nvim-lualine/lualine.nvim)
 - [ ] Copilot
 - [ ] nvim-autopares
