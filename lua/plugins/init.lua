@@ -68,6 +68,18 @@ local default_plugins = {
   },
 
   {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = require("plugins.configs.todo_comments").opts,
+  },
+
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    opts = require("plugins.configs.autopairs").opts,
+  },
+
+  {
     "NvChad/nvim-colorizer.lua",
     opts = require("plugins.configs.colorizer").opts,
     config = require("plugins.configs.colorizer").config,

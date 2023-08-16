@@ -1,11 +1,10 @@
-vim.opt.backspace:append { "nostop" } -- don't stop backspace at insert
-
 local opt = vim.opt
 local g = vim.g
-local config = require("core.utils").get_config()
 
+g.mapleader = " "
 
 --- Identation
+opt.backspace:append { "nostop" }
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.smartindent = true
@@ -17,4 +16,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
 
-g.mapleader = " "
+opt.colorcolumn = "80"
+opt.relativenumber = true
+
+opt.clipboard = "unnamedplus"

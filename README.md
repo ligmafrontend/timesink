@@ -2,18 +2,18 @@
 
 ## What we want
 
-- [ ] Line numbers (relative)
-- [ ] Line length 120 (wenn moeglich nur wenn ueberschritten anzeigen?)
+- [x] Line numbers (relative)
+- [x] Line length 120 (wenn moeglich nur wenn ueberschritten anzeigen?)
 - [ ] lazy git (astronvim)
 - [ ] lsp (move mit ctrl + j k)
 - [ ] move between splits 
 - [ ] whichkey config
-- [ ] todo-comments
+- [x] todo-comments
 - [x] [NvimColorizer](https://github.com/NvChad/nvim-colorizer.lua)
 - [x] [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [ ] [LuaLine](https://github.com/nvim-lualine/lualine.nvim)
 - [ ] Copilot
-- [ ] nvim-autopares
+- [x] nvim-autopairs
 - [ ] nvim-surround
 - [x] alpha (dashboard)
 - [x] mason
