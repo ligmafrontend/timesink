@@ -1,4 +1,12 @@
-return function(_, opts)
+local M = {}
+M.opts = {
+  transparent = true,
+  styles = {
+    sidebars = "transparent",
+    floats = "transparent",
+  }
+}
+M.config = function(_, opts)
   opts = opts or {}
 
   local result = vim.tbl_deep_extend("force", {
@@ -8,3 +16,4 @@ return function(_, opts)
   require("tokyonight").setup(result)
 end
 
+return M

@@ -1,4 +1,7 @@
-local M = {
+local M = {}
+
+M.opts = function()
+  return {
     filters = {
       dotfiles = false,
       exclude = { vim.fn.stdpath "config" .. "/lua/user" },
@@ -34,11 +37,11 @@ local M = {
       root_folder_label = false,
       highlight_git = false,
       highlight_opened_files = "none",
-  
+
       indent_markers = {
         enable = false,
       },
-  
+
       icons = {
         show = {
           file = true,
@@ -46,7 +49,7 @@ local M = {
           folder_arrow = true,
           git = false,
         },
-  
+
         glyphs = {
           default = "󰈚",
           symlink = "",
@@ -73,5 +76,16 @@ local M = {
       },
     },
   }
-  
-  return M
+end
+
+M.config = function(_, opts)
+  require("nvim-tree").setup(opts)
+end
+
+
+M.init = function()
+  require("core.utils").load_mappings "nvimtree"
+end
+
+return M
+
