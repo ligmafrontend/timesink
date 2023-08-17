@@ -105,6 +105,10 @@ local default_plugins = {
   {
     "folke/which-key.nvim",
   },
+
+  {
+    "christoomey/vim-tmux-navigator",
+  },
 }
 
 local config = require("core.utils").get_config()
