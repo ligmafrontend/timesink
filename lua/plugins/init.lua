@@ -109,6 +109,14 @@ local default_plugins = {
   {
     "christoomey/vim-tmux-navigator",
   },
+
+  {
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
 }
 
 local config = require("core.utils").get_config()

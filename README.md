@@ -4,7 +4,7 @@
 
 - [x] Line numbers (relative)
 - [x] Line length 120 (wenn moeglich nur wenn ueberschritten anzeigen?)
-- [ ] lazy git (astronvim)
+- [x] lazy git (astronvim)
 - [ ] lsp (move mit ctrl + j k)
 - [x] move between splits 
 - [ ] whichkey config
