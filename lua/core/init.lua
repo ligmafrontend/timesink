@@ -16,7 +16,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
 
-opt.colorcolumn = "80"
+opt.colorcolumn = "120"
 opt.relativenumber = true
 
 opt.clipboard = "unnamedplus"
