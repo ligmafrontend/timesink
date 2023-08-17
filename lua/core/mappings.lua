@@ -16,9 +16,6 @@ M.general = {
         ["k"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', "Move up", opts = { expr = true } },
         ["<Up>"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', "Move up", opts = { expr = true } },
         ["<Down>"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
-
-        -- open lazygit
-        ["<leader>gg"] = { "<cmd>LazyGit<cr>", desc = "LazyGit" },
     },
     -- visual mode
     v = {
@@ -32,6 +29,12 @@ M.general = {
         ["<C-k>"] = { "<cmd>wincmd k<cr>", desc = "Terminal up window navigation" },
         ["<C-l>"] = { "<cmd>wincmd l<cr>", desc = "Terminal right window navigation" },
     }
+}
+
+M.lazygit = {
+    n = {
+        ["<leader>gg"] = { "<cmd>LazyGit<cr>", desc = "LazyGit" },
+    },
 }
 
 M.comment = {
