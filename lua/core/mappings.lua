@@ -8,10 +8,10 @@ M.general = {
         ["<C-s>"] = { "<cmd>w!<cr>", desc = "Force write" },
         ["<C-q>"] = { "<cmd>qa!<cr>", desc = "Force quit" },
 
-    -- Allow moving the cursor through wrapped lines with j, k, <Up> and <Down>
-    -- http://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
-    -- empty mode is same as using <cmd> :map
-    -- also don't use g[j|k] when in operator pending mode, so it doesn't alter d, y or c behaviour
+        -- Allow moving the cursor through wrapped lines with j, k, <Up> and <Down>
+        -- http://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
+        -- empty mode is same as using <cmd> :map
+        -- also don't use g[j|k] when in operator pending mode, so it doesn't alter d, y or c behaviour
         ["j"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
         ["k"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', "Move up", opts = { expr = true } },
         ["<Up>"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', "Move up", opts = { expr = true } },
@@ -31,36 +31,42 @@ M.general = {
     }
 }
 
+M.lazygit = {
+    n = {
+        ["<leader>gg"] = { "<cmd>LazyGit<cr>", desc = "LazyGit" },
+    },
+}
+
 M.comment = {
     -- plugin = true,
 
     -- toggle comment in both modes
     n = {
         ["<leader>/"] = {
-        function()
-            require("Comment.api").toggle.linewise.current()
-        end,
-        "Toggle comment",
+            function()
+                require("Comment.api").toggle.linewise.current()
+            end,
+            "Toggle comment",
         },
     },
 
     v = {
         ["<leader>/"] = {
-        "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
-        "Toggle comment",
+            "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
+            "Toggle comment",
         },
     },
 }
 
 M.nvimtree = {
     -- plugin = true,
-  
-  n = {
-    -- toggle
-    ["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
-    -- focus
-    ["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
-  },
+
+    n = {
+        -- toggle
+        ["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+        -- focus
+        ["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
+    },
 }
 
 M.telescope = {
@@ -72,18 +78,18 @@ M.telescope = {
         ["<leader>fw"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" },
         ["<leader>fW"] = {
             function()
-              require("telescope.builtin").live_grep {
-                additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
-              }
+                require("telescope.builtin").live_grep {
+                    additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
+                }
             end,
             desc = "Find words in all files",
-          },
+        },
     }
 }
 
 M.whichkey = {
     -- plugin = true,
-  
+
     n = {
         ["<leader>wK"] = {
             function()

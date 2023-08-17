@@ -4,9 +4,9 @@
 
 - [x] Line numbers (relative)
 - [x] Line length 120 (wenn moeglich nur wenn ueberschritten anzeigen?)
-- [ ] lazy git (astronvim)
+- [x] lazy git (astronvim)
 - [ ] lsp (move mit ctrl + j k)
-- [ ] move between splits 
+- [x] move between splits 
 - [ ] whichkey config
 - [x] todo-comments
 - [x] [NvimColorizer](https://github.com/NvChad/nvim-colorizer.lua)
