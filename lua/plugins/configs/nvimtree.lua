@@ -3,7 +3,7 @@ local M = {}
 M.opts = function()
   return {
     filters = {
-      dotfiles = false,
+      dotfiles = true,
       exclude = { vim.fn.stdpath "config" .. "/lua/user" },
     },
     disable_netrw = true,
@@ -88,4 +88,3 @@ M.init = function()
 end
 
 return M
-
